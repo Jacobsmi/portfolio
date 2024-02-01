@@ -8,7 +8,7 @@ export default function Home() {
       <div className="h-screen w-full flex bg-slate-800 p-20">
         <div className="w-1/2 flex flex-col justify-between">
           <div></div>
-          <div className="text-white">
+          <div className="text-slate-50">
             <div className="text-3xl lg:text-6xl xl:text-7xl font-bold">
               Hi, I&apos;m Michael.
             </div>
