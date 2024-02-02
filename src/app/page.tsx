@@ -4,40 +4,38 @@ import { FiArrowUpRight, FiGithub, FiLinkedin } from "react-icons/fi";
 export default function Home() {
   return (
     <div>
-      {/* First Section */}
-      <div className="h-screen w-full flex bg-slate-800 p-20">
-        <div className="w-1/2 flex flex-col justify-between">
+      <div className="flex flex-col md:flex-row">
+        <div className="bg-slate-800 h-screen w-full p-8 md:p-12 flex flex-col justify-between">
           <div></div>
-          <div className="text-white">
-            <div className="text-3xl lg:text-6xl xl:text-7xl font-bold">
+          <div>
+            <div className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-white">
               Hi, I&apos;m Michael.
             </div>
-            <div className="mt-10 text-md lg:text-lg xl:text-2xl">
-              Software Engineer, bad gamer, and even worse golfer. I love
+            <div className="text-white sm:text-lg lg:text-xl mt-4">
+              Software Engineer, web-enthusiast, golfer, and much more. I love
               bringing functionality to the web, making it look beautiful, and I
               love moving fast.
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex items-center justify-between">
             <Link
-              href={"https://www.linkedin.com/in/michael-jacobs1/"}
+              href={"https://github.com/Jacobsmi"}
               className="flex items-center text-white hover:underline"
             >
-              <FiLinkedin className="mr-2" />
-              LinkedIn
-              <FiArrowUpRight className="ml-0.5" />
+              <FiGithub className="mr-2" /> Github
+              <FiArrowUpRight />
             </Link>
             <Link
               href={"https://github.com/Jacobsmi"}
               className="flex items-center text-white hover:underline"
             >
-              <FiGithub className="mr-2" />
-              GitHub
-              <FiArrowUpRight className="ml-0.5" />
+              <FiLinkedin className="mr-2" /> LinkedIn
+              <FiArrowUpRight />
             </Link>
             <div></div>
           </div>
         </div>
+        <div className="bg-slate-800 h-screen w-full"></div>
       </div>
     </div>
   );
