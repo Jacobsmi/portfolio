@@ -4,14 +4,14 @@ import { FiArrowUpRight, FiGithub, FiLinkedin } from "react-icons/fi";
 export default function Home() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col xl:flex-row">
         <div className="bg-slate-800 h-screen w-full p-8 md:p-12 flex flex-col justify-between">
           <div></div>
           <div>
             <div className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-stone-200">
               Hi, I&apos;m Michael.
             </div>
-            <div className="text-stone-200 sm:text-lg lg:text-xl mt-4">
+            <div className="text-stone-200 sm:text-lg lg:text-xl mt-12">
               Software Engineer, web-enthusiast, golfer, and much more. I love
               bringing functionality to the web, making it look beautiful, and I
               love moving fast.
@@ -26,7 +26,7 @@ export default function Home() {
               <FiArrowUpRight />
             </Link>
             <Link
-              href={"https://github.com/Jacobsmi"}
+              href={"https://www.linkedin.com/in/michael-jacobs1/"}
               className="flex items-center text-stone-200 hover:underline"
             >
               <FiLinkedin className="mr-2" /> LinkedIn
@@ -35,7 +35,6 @@ export default function Home() {
             <div></div>
           </div>
         </div>
-        <div className="bg-slate-800 h-screen w-full"></div>
       </div>
     </div>
   );
